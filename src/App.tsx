@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Grid, GridItem, Show, Hide } from '@chakra-ui/react';
+import { Grid, GridItem, Show } from '@chakra-ui/react';
 import NavBar from './components/NavBar';
 import GameGrid from './components/GameGrid';
 import GenreList from './components/GenreList';

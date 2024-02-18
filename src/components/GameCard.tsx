@@ -2,6 +2,7 @@ import { Card, CardBody, HStack, Heading, Image, SimpleGrid, Text } from '@chakr
 import { Games } from '../hooks/useGames';
 import PlatformIconList from './PlatformIconList';
 import CriticScore from './CriticScore';
+import getCroppedImageUrl from './image-url';
 
 interface Props {
 	game: Games;
@@ -10,7 +11,7 @@ interface Props {
 const GameCard = ({ game }: Props) => {
 	return (
 		<Card borderRadius={8} overflow={'hidden'}>
-			<Image src={game.background_image} />
+			<Image src={getCroppedImageUrl(game.background_image)} />
 			<CardBody>
 				<Heading fontSize='2xl'>{game.name}</Heading>
 				<HStack justifyContent='space-between'>

@@ -8,11 +8,7 @@ const GameGrid = () => {
 	return (
 		<>
 			{error && <text>{error}</text>}
-			<SimpleGrid
-				padding='10px'
-				spacing={8}
-				templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
-			>
+			<SimpleGrid padding='10px' spacing={8} columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}>
 				{games.map(game => (
 					<GameCard key={game.id} game={game} />
 				))}

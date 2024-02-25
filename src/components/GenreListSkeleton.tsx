@@ -1,4 +1,4 @@
-import { Flex, HStack, List, ListItem, SkeletonCircle, SkeletonText } from '@chakra-ui/react';
+import { List, ListItem, SkeletonText } from '@chakra-ui/react';
 
 const GenreListSkeleton = () => {
 	return (
